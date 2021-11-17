@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scout's Survey!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="full-form">
+      <header class="header">
+        <h1 id="title" class="text-center">
+          The Scooty Experience Customer Review
+        </h1>
+        <p id="description">
+          Please complete this form to let us know what you thought about your
+          time with Scout.
+        </p>
+      </header>
+
+      <form id="survey-form" class="green-background">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            id="name"
+            class="form-box"
+            type="text"
+            required
+            name="name"
+            placeholder="Enter Your Name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email"> Email</label>
+          <input
+            id="email"
+            class="form-box"
+            type="email"
+            class="form-control"
+            required
+            name="email"
+            placeholder="Enter Your Email"
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="time-spent">
+            Time spent with Scout</label
+          >
+          <input
+            type="number"
+            id="number"
+            class="form-box"
+            min="4"
+            max="10000"
+            required
+            name="time-spent"
+            placeholder="Hours"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Interest in dogs</label>
+          <select id="dropdown" name="interest" class="form-box">
+            <option disabled selected value>Select your interest level</option>
+            <option value="I hate dogs">I hate dogs</option>
+            <option value="They're whatever">They're whatever</option>
+            <option value="I like dogs, but cats are better">
+              I like dogs, but cats are better
+            </option>
+            <option value="dogs are the best">Dogs are the best!</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Which option best describes Scout?</label><br />
+          <label for="fun">
+            <input id="fun" type="radio" value="fun" name="describe-scout" />Fun
+          </label>
+          <label for="cuddly">
+            <input
+              id="cuddly"
+              value="cuddly"
+              type="radio"
+              name="describe-scout"
+            />Cuddly
+          </label>
+          <label for="hungry">
+            <input
+              id="hungry"
+              value="hungry"
+              type="radio"
+              name="describe-scout"
+            />Hungry
+          </label>
+          <label for="nightmare">
+            <input
+              id="nightmare"
+              value="nightmare"
+              type="radio"
+              name="describe-scout"
+            />Your worst nightmare
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label>Please check all boxes that apply:</label> <br />
+          <label for="ate-food">
+            <input
+              id="ate-food"
+              value="ate-food"
+              type="checkbox"
+              name="what-applies"
+            />Scout ate food out of my hands
+          </label>
+          <label for="ball-surgery">
+            <input
+              id="ball-surgery"
+              value="ball-surgery"
+              type="checkbox"
+              name="what-applies"
+            />I paid $3000 to remove a ball from Scout's stomach
+          </label>
+          <label for="peed">
+            <input
+              id="peed"
+              value="peed"
+              type="checkbox"
+              name="what-applies"
+            />Scout peed in excitement when she saw me
+          </label>
+          <label for="violence">
+            <input
+              id="violence"
+              value="violence"
+              type="checkbox"
+              name="what-applies"
+            />Scout threatened to push me down the stairs
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>Any additional thoughts on Scout?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your thoughts here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button id="submit" type="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
